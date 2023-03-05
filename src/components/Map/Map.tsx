@@ -43,7 +43,8 @@ function MapProvider() {
     setMap(map);
 
     //Test API
-    fetch('https://ane-frontend-data.azurewebsites.net/time/utc')
+    fetch('https://ane-frontend-data.azurewebsites.net/myapi')
+      //fetch('https://localhost:7291/myapi')
       .then(function (response) {
         return response.json();
       })
