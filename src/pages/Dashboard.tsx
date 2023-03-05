@@ -1,7 +1,5 @@
-import ChartProvider from '../components/Chart/Chart';
-
 function DashboardPage() {
-  return <ChartProvider />;
+  return <></>;
 }
 
 export default DashboardPage;

@@ -30,9 +30,9 @@ function Navigation() {
           },
         }}
       >
-        <Tab sx={{ minHeight: '56px' }} component={Link} label="Home" to="/" />
+        <Tab sx={{ minHeight: '52px' }} component={Link} label="Home" to="/" />
         <Tab
-          sx={{ minHeight: '56px' }}
+          sx={{ minHeight: '52px' }}
           component={Link}
           label="Dashboard"
           to="/dashboard"

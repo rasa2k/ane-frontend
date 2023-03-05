@@ -3,7 +3,7 @@ import 'ol/ol.css';
 import Map from 'ol/Map';
 import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
-import { XYZ } from 'ol/source';
+import { OSM } from 'ol/source';
 import { defaults as defaultControls } from 'ol/control';
 import { defaults as defaultInteractions } from 'ol/interaction';
 import { fromLonLat } from 'ol/proj';
@@ -20,14 +20,12 @@ function MapProvider() {
       target: mapElement.current || undefined,
       layers: [
         new TileLayer({
-          source: new XYZ({
-            url: 'http://mt{0-3}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
-          }),
+          source: new OSM(),
         }),
       ],
       view: new View({
-        center: fromLonLat([-110, 65]),
-        zoom: 4,
+        center: fromLonLat([0, 0]),
+        zoom: 0,
         projection: 'EPSG:3857',
       }),
       controls: defaultControls({
