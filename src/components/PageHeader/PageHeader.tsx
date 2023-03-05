@@ -1,6 +1,6 @@
 import { AppBar, Box, Button, Toolbar, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
+import LogoDev from '@mui/icons-material/LogoDev';
 import Navigation from '../Navigation/Navigation';
 
 interface HeaderProps {
@@ -18,7 +18,7 @@ function PageHeader({ appName }: HeaderProps) {
     >
       <Toolbar>
         <Button to="/" component={Link} style={{ padding: 0, minWidth: 'auto' }}>
-          <AcUnitIcon fontSize="large" color="success" />
+          <LogoDev fontSize="large" color="secondary" />
         </Button>
         <Typography
           color={'secondary.main'}

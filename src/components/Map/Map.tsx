@@ -42,6 +42,15 @@ function MapProvider() {
 
     setMap(map);
 
+    //Test API
+    fetch('https://ane-frontend-data.azurewebsites.net/time/utc')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (json) {
+        console.log('json ', json);
+      });
+
     return () => {
       map.setTarget(undefined);
     };

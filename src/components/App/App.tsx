@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <PageHeader appName="AnE-Frontend" />
+        <PageHeader appName="AnE" />
         <PageBody />
       </BrowserRouter>
     </>

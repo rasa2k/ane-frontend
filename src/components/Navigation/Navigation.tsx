@@ -19,6 +19,13 @@ function Navigation() {
     setPageIndex(newPage);
   };
 
+  const tabStyle = {
+    minHeight: '52px',
+    '&:hover': {
+      backgroundColor: 'mediumGrey.main',
+    },
+  };
+
   return (
     <Box m={2}>
       <Tabs
@@ -28,11 +35,14 @@ function Navigation() {
           '& .MuiTab-root': {
             fontWeight: 'fontWeightBold',
           },
+          '& .MuiTabs-indicator': {
+            height: 4,
+          },
         }}
       >
-        <Tab sx={{ minHeight: '52px' }} component={Link} label="Home" to="/" />
+        <Tab sx={tabStyle} component={Link} label="Home" to="/" />
         <Tab
-          sx={{ minHeight: '52px' }}
+          sx={tabStyle}
           component={Link}
           label="Dashboard"
           to="/dashboard"
