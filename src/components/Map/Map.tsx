@@ -43,8 +43,10 @@ function MapProvider() {
     setMap(map);
 
     //Test API
-    fetch('https://ane-frontend-data.azurewebsites.net/topojson')
-      //fetch('https://localhost:7291/topojson')
+    fetch(
+      'https://ane-frontend-data.azurewebsites.net/topojson?filename=Mediterranean_TwoAreasBoundaries'
+    )
+      //fetch('https://localhost:7291/topojson?filename=Mediterranean_TwoAreasBoundaries')
       .then(function (response) {
         return response.json();
       })
