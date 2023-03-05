@@ -2,7 +2,7 @@
   "name": "ane-frontend",
   "version": "1.0.0",
   "private": false,
-  "homepage": ".",
+  "homepage": "https://ane-frontend.azurewebsites.net/",
   "dependencies": {
     "@dhi/icons": "^2.0.1",
     "@dhi/react-components-lab": "^2.2.6",
