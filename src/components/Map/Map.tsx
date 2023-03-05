@@ -43,8 +43,8 @@ function MapProvider() {
     setMap(map);
 
     //Test API
-    fetch('https://ane-frontend-data.azurewebsites.net/myapi')
-      //fetch('https://localhost:7291/myapi')
+    fetch('https://ane-frontend-data.azurewebsites.net/topojson')
+      //fetch('https://localhost:7291/topojson')
       .then(function (response) {
         return response.json();
       })
